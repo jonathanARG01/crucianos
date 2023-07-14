@@ -1,0 +1,29 @@
+import { Component, OnInit } from '@angular/core';
+import { CommonModule      } from '@angular/common';
+import { FormsModule       } from '@angular/forms';
+import { IonicModule       } from '@ionic/angular';
+import { NavbarComponent   } from 'src/app/components/navbar/navbar.component';
+
+
+
+@Component({
+    selector:    'app-teams',
+    templateUrl: './teams.page.html',
+    styleUrls:   ['./teams.page.scss'],
+    standalone:  true,
+    imports:     [IonicModule, CommonModule, FormsModule, NavbarComponent]
+})
+
+
+
+export class TeamsPage implements OnInit {
+
+
+	constructor() { }
+
+
+	ngOnInit() {
+	}
+
+
+}
