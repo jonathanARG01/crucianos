@@ -1,3 +1,39 @@
-<p>
-  person works!
-</p>
+<ion-card>
+
+	<div class="box-contorno">
+		<img class="img-contorno" src="assets/img/contorno.png" alt="person"/>
+		<img class="img-person" src="assets/img/persona.png" alt="person"/>
+	</div>
+		
+	<ion-card-header>
+	  	<ion-card-title class="ion-text-center">{{ person.name }} {{ person.lastname }}</ion-card-title>
+	  	<ion-card-subtitle class="ion-text-center">{{ person.charge }}</ion-card-subtitle>
+	</ion-card-header>
+  
+	<ion-card-content>
+		<ion-buttons class="ion-justify-content-center">
+			
+			<ion-button>
+				<ion-icon name="logo-whatsapp"></ion-icon>
+			</ion-button>
+
+			<ion-button>
+				<ion-icon name="logo-facebook"></ion-icon>
+			</ion-button>
+
+			<ion-button>
+				<ion-icon name="logo-instagram"></ion-icon>
+			</ion-button>
+
+			<ion-button>
+				<ion-icon name="mail-outline"></ion-icon>
+			</ion-button>
+
+			<ion-button>
+				<ion-icon name="call-outline"></ion-icon>
+			</ion-button>
+			
+		</ion-buttons>
+	</ion-card-content>
+
+</ion-card>

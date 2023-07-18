@@ -27,7 +27,9 @@
 
 
 
-
+.container {
+    padding: 80px 20px;
+}
 
 
 .glass-content {
@@ -52,17 +54,26 @@ ion-content {
 }
 
 ion-header {
+    height: 60px;
+    padding: 10px;
     background-color: #090979;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    &>div {
+        height: fit-content;
+        display: flex;
+        align-items: center;
+    }
 }
 
-ion-toolbar {
-    --background: transparent;
-    background: rgba(19, 63, 176, 0.27);
-    box-shadow: 0 4px 30px rgba(7, 77, 216, 0.1);
-    backdrop-filter: blur(25.3px);
-    -webkit-backdrop-filter: blur(25.3px);
-    color: white;
-}
+// ion-toolbar {
+//     --background: transparent;
+//     background: rgba(19, 63, 176, 0.27);
+//     box-shadow: 0 4px 30px rgba(7, 77, 216, 0.1);
+//     backdrop-filter: blur(25.3px);
+//     -webkit-backdrop-filter: blur(25.3px);
+//     color: white;
+// }
 
 ion-card {
     margin: 20px;

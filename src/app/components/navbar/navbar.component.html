@@ -1,52 +1,38 @@
 <!-- mode="md" para asignar los estilos de Material Design -->
 <ion-header mode="md">
 	
-	<ion-toolbar>
+		<div class="ion-justify-content-start">
+			<ion-button routerLink="/home" routerLinkActive="active" fill="clear" shape="round">
+				Inicio
+			</ion-button>
+			<ion-button routerLink="/about" routerLinkActive="active" fill="clear" shape="round">
+				Nosotros
+			</ion-button>
+			<ion-button routerLink="/history" routerLinkActive="active" fill="clear" shape="round">
+				Historia
+			</ion-button>
+			<ion-button routerLink="/teams" routerLinkActive="active" fill="clear" shape="round">
+				Equipos
+			</ion-button>
+		</div>
+		
+		<div class="box-logo">
+			<img class="logo" src="./assets/img/logo.png">
+		</div>
 
-		<ion-grid>
-			
-			<ion-row class="ion-align-items-center">
-				
-				<ion-col size="5">
-					<ion-button routerLink="/home" routerLinkActive="active" fill="clear" shape="round">
-						Inicio
-					</ion-button>
-					<ion-button routerLink="/about" routerLinkActive="active" fill="clear" shape="round">
-						Nosotros
-					</ion-button>
-					<ion-button routerLink="/history" routerLinkActive="active" fill="clear" shape="round">
-						Historia
-					</ion-button>
-					<ion-button routerLink="/teams" routerLinkActive="active" fill="clear" shape="round">
-						Equipos
-					</ion-button>
-				</ion-col>
-				
-				<ion-col size="2" class="ion-text-center">
-					<div class="box-logo">
-						<img class="logo" src="./assets/img/logo.png">
-					</div>
-				</ion-col>
-				
-				<ion-col size="5">
-					<ion-button routerLink="/blog" routerLinkActive="active" fill="clear" shape="round">
-						Noticias
-					</ion-button>
-					<ion-button routerLink="/gallery" routerLinkActive="active" fill="clear" shape="round">
-						Galería
-					</ion-button>
-					<ion-button routerLink="/contact" routerLinkActive="active" fill="clear" shape="round">
-						Contacto
-					</ion-button>
-					<ion-button routerLink="/sponsors" routerLinkActive="active" fill="clear" shape="round">
-						Auspiciadores
-					</ion-button>
-				</ion-col>
-			
-			</ion-row>
-
-		</ion-grid>
-
-	</ion-toolbar>
+		<div class="ion-justify-content-end">
+			<ion-button routerLink="/blog" routerLinkActive="active" fill="clear" shape="round">
+				Noticias
+			</ion-button>
+			<ion-button routerLink="/gallery" routerLinkActive="active" fill="clear" shape="round">
+				Galería
+			</ion-button>
+			<ion-button routerLink="/contact" routerLinkActive="active" fill="clear" shape="round">
+				Contacto
+			</ion-button>
+			<ion-button routerLink="/sponsors" routerLinkActive="active" fill="clear" shape="round">
+				Auspiciadores
+			</ion-button>
+		</div>
 
 </ion-header>

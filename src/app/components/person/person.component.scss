@@ -1,0 +1,66 @@
+ion-card {
+    background-color: transparent;
+    box-shadow: inherit;
+    max-width: 400px;
+    margin: 0 auto;
+    border: none;
+    .box-contorno {
+        &:hover {
+            .img-contorno {
+                transform: scale(0.9);
+            }
+        }
+        .img-contorno {
+            position: absolute;
+            z-index: -1;
+            opacity: .3;
+            filter: drop-shadow(2px 4px 6px black);
+            animation: scale-up-center 2s;
+            transition-duration: .3s;
+        }
+        .img-person {
+            filter: drop-shadow(2px 4px 6px black);
+            animation: slide-top 1s;
+            transition-duration: .3s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+    ion-card-title {
+        --color: #fff;
+    }
+    ion-card-subtitle {
+        --color: green;
+    }
+}
+
+.scale-up-center {
+    animation: scale-up-center 1s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.slide-top {
+    animation: slide-top 1s linear both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(0) scale(0.5);
+    }
+    50% {
+        transform: translateY(-60px) scale(0.7);
+    }
+    80% {
+        transform: translateY(-10) scale(1);
+    }
+}
+
