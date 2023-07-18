@@ -4,10 +4,11 @@ import { FormsModule       } from '@angular/forms';
 import { IonicModule       } from '@ionic/angular';
 
 // Sections
-import { MainComponent     } from 'src/app/sections/main/main.component';
+import { MainComponent  } from 'src/app/sections/main/main.component';
+import { FieldComponent } from 'src/app/sections/field/field.component';
 
 // Components
-import { NavbarComponent   } from 'src/app/components/navbar/navbar.component';
+import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 
 
 
@@ -21,7 +22,8 @@ import { NavbarComponent   } from 'src/app/components/navbar/navbar.component';
 		CommonModule,
 		FormsModule,
 		NavbarComponent,
-		MainComponent
+		MainComponent,
+		FieldComponent
 	]
 })
 
