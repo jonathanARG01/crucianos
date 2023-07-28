@@ -1,3 +1,4 @@
+// Angular
 import { Component, OnInit } from '@angular/core';
 import { CommonModule      } from '@angular/common';
 import { FormsModule       } from '@angular/forms';
@@ -5,8 +6,9 @@ import { IonicModule       } from '@ionic/angular';
 
 // Sections
 import { MainComponent  } from 'src/app/sections/main/main.component';
-import { NextComponent } from 'src/app/sections/next/next.component';
+import { NextComponent  } from 'src/app/sections/next/next.component';
 import { FieldComponent } from 'src/app/sections/field/field.component';
+import { JoinComponent  } from 'src/app/sections/join/join.component';
 
 // Components
 import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
@@ -25,7 +27,8 @@ import { NavbarComponent } from 'src/app/components/navbar/navbar.component';
 		NavbarComponent,
 		MainComponent,
 		NextComponent,
-		FieldComponent
+		FieldComponent,
+		JoinComponent
 	]
 })
 
